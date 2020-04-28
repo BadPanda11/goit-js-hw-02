@@ -1,11 +1,12 @@
 const formatString = function (string) {
   let stringLength = string.split('').length;
   console.log(stringLength);
+  let limit;
 
   if (stringLength > 40) {
-    string = `${string.slice(0, 41)} ${'...'}`;
+    limit = `${string.slice(0, 41)} ${'...'}`;
   }
-  return string;
+  return limit;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

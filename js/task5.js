@@ -1,13 +1,8 @@
 const checkForSpam = function (message) {
-  let words = message.split(' ');
-  console.log(words);
-  for (const word of words) {
-    console.log(word);
-    if (word.toLowerCase() === 'sale' || word.toLowerCase() === 'spam') {
-      return true;
-    }
-    return false;
-  }
+  return (
+    message.toLowerCase().includes('spam') ||
+    message.toLowerCase().includes('sale')
+  );
 };
 
 /*

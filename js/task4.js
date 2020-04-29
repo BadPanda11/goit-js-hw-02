@@ -5,6 +5,8 @@ const formatString = function (string) {
 
   if (stringLength > 40) {
     limit = `${string.slice(0, 41)} ${'...'}`;
+  } else {
+    limit = string;
   }
   return limit;
 };

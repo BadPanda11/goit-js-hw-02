@@ -11,12 +11,15 @@ do {
     break;
   }
   input = Number(input);
+
+  // -------------------для запрета попадания NaN в массив
   const notANumber = Number.isNaN(input);
 
   if (notANumber) {
     console.log(notANumber);
     continue;
   }
+  // -----------------------------------------------------------
   numbers.push(input);
   console.log(numbers);
 } while (true);
